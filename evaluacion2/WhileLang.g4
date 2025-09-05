@@ -3,12 +3,7 @@ grammar WhileLang;
 program: statement+ EOF;
 
 statement
-    : assignment
-    | whileStatement
-    | ifStatement
-    | breakStatement
-    | continueStatement
-    ;
+    : assignment   | whileStatement   | ifStatement   | breakStatement | continueStatement;
 
 assignment: ID ASSIGN expr SEMI;
 
